@@ -1,0 +1,129 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.4">
+  <diagram name="Page-1" id="o08TtFAsVQpN87tV3FQX">
+    <mxGraphModel dx="1687" dy="1049" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-38" value="Students" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" vertex="1" parent="1">
+          <mxGeometry x="760" y="575" width="80" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-39" value="Instructor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
+          <mxGeometry y="570" width="80" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-1" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap-mode: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22create%20an%20issue%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22170%22%20y%3D%22190%22%20width%3D%22120%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap-mode: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22create%20an%20issue%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22170%22%20y%3D%22190%22%20width%3D%22120%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;container=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="145" width="530" height="885" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-35" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#FFF2CC;strokeColor=#6c8ebf;container=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="420" width="510" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-34" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;gradientDirection=north;container=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="155" width="510" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-7" value="Create Account" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="165" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-8" value="Delete Account&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap-mode: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Create%20Account%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22170%22%20y%3D%2210%22%20width%3D%22120%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="165" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-9" value="Login" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-10" value="Add a new item in inventory" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="245" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-11" value="Show inventory" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-12" value="Delete an item from inventory" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="245" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-13" value="create an issue" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-15" value="Delete an issue" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-16" value="Show an issue" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="750" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-17" value="create a car" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-18" value="Delete a car" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="365" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-19" value="Show cars" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-20" value="create invoice" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-21" value="delete issue" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-22" value="show all invoices" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="365" y="750" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-23" value="edit a car" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="365" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-24" value="edit an issue" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="365" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-26" value="edit an invoice" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="365" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-27" value="update an item in inventory" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="365" y="245" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-28" value="send email regarding underlimit items in inventory" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-29" value="edit account" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="365" y="165" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-36" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;gradientColor=#ffd966;strokeColor=#d6b656;container=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="910" width="510" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-30" value="Upload a video on an issue" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="365" y="935" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Glyy4nIdWrFzl7ZjbMnD-38" target="Glyy4nIdWrFzl7ZjbMnD-36">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="960" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Glyy4nIdWrFzl7ZjbMnD-38" target="Glyy4nIdWrFzl7ZjbMnD-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-46" value="student can only &lt;br&gt;see his info&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Glyy4nIdWrFzl7ZjbMnD-41">
+          <mxGeometry x="-0.3213" relative="1" as="geometry">
+            <mxPoint x="-19" y="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Glyy4nIdWrFzl7ZjbMnD-39" target="Glyy4nIdWrFzl7ZjbMnD-35">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Glyy4nIdWrFzl7ZjbMnD-39" target="Glyy4nIdWrFzl7ZjbMnD-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-48" value="Download PDF" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="750" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Glyy4nIdWrFzl7ZjbMnD-49" value="Insert item into the invoice" style="rounded=1;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="365" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

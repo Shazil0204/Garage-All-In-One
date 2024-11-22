@@ -1,0 +1,127 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.6">
+  <diagram name="Page-1" id="Q-oddFp2qGm_mmafX44_">
+    <mxGraphModel dx="2206" dy="1372" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QhsxeryHxBFUPycHnsD6-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="QhsxeryHxBFUPycHnsD6-1" target="QhsxeryHxBFUPycHnsD6-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QhsxeryHxBFUPycHnsD6-1" value="Open URL" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="375" y="40" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QhsxeryHxBFUPycHnsD6-4" target="ELpyZdBVN129lxJtO_kT-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QhsxeryHxBFUPycHnsD6-4" value="Login Page" style="shape=display;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="385" y="150" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ELpyZdBVN129lxJtO_kT-1" target="ELpyZdBVN129lxJtO_kT-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-1" value="Login form" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ELpyZdBVN129lxJtO_kT-5" target="ELpyZdBVN129lxJtO_kT-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-5" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;insert user name and password" style="shape=manualInput;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="385" y="370" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ELpyZdBVN129lxJtO_kT-7" target="ELpyZdBVN129lxJtO_kT-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-7" value="calling API and sending data with it" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="205" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ELpyZdBVN129lxJtO_kT-9" target="ELpyZdBVN129lxJtO_kT-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-9" value="API calls the database and check if the data matches" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="205" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ELpyZdBVN129lxJtO_kT-11" target="ELpyZdBVN129lxJtO_kT-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-11" value="stored procedure checks the data" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="405" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ELpyZdBVN129lxJtO_kT-17" target="ELpyZdBVN129lxJtO_kT-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-26" value="&lt;br&gt;NO&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ELpyZdBVN129lxJtO_kT-23">
+          <mxGeometry x="-0.0737" y="3" relative="1" as="geometry">
+            <mxPoint x="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ELpyZdBVN129lxJtO_kT-17" target="ELpyZdBVN129lxJtO_kT-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-29" value="&lt;br&gt;&lt;div&gt;YES&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ELpyZdBVN129lxJtO_kT-28">
+          <mxGeometry x="-0.1593" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-17" value="Does user exists" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="510" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ELpyZdBVN129lxJtO_kT-22" target="ELpyZdBVN129lxJtO_kT-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-22" value="Your username &lt;br&gt;does not exists" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ELpyZdBVN129lxJtO_kT-27" target="ELpyZdBVN129lxJtO_kT-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-27" value="procedure checks if the hashed password matches&amp;nbsp;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="ELpyZdBVN129lxJtO_kT-30" target="ELpyZdBVN129lxJtO_kT-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-33" value="&lt;br&gt;&lt;div&gt;NO&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ELpyZdBVN129lxJtO_kT-32">
+          <mxGeometry x="-0.3073" y="2" relative="1" as="geometry">
+            <mxPoint x="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ELpyZdBVN129lxJtO_kT-30" target="ELpyZdBVN129lxJtO_kT-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-36" value="&lt;br&gt;&lt;div&gt;YES&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ELpyZdBVN129lxJtO_kT-35">
+          <mxGeometry x="-0.0757" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-30" value="Does the Password matches" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="670" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ELpyZdBVN129lxJtO_kT-34" target="ELpyZdBVN129lxJtO_kT-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-34" value="ASP.NET creates the JWT" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ELpyZdBVN129lxJtO_kT-37" target="ELpyZdBVN129lxJtO_kT-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-37" value="React takes the token and save it into the local storage" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ELpyZdBVN129lxJtO_kT-41" target="ELpyZdBVN129lxJtO_kT-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-41" value="Inventory page" style="shape=display;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="850" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ELpyZdBVN129lxJtO_kT-43" value="End of this flowchart" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="590" y="840" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
