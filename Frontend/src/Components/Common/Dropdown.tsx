@@ -7,11 +7,16 @@ interface DropdownOption {
 }
 
 interface DropdownProps {
+  title: string;
   options: DropdownOption[];
   onOptionSelect: (value: string) => void;
 }
 
-const Dropdown: React.FC<DropdownProps> = ({ options, onOptionSelect }) => {
+const Dropdown: React.FC<DropdownProps> = ({
+  title,
+  options,
+  onOptionSelect,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isRotated, setIsRotated] = useState(false);
 
@@ -30,10 +35,10 @@ const Dropdown: React.FC<DropdownProps> = ({ options, onOptionSelect }) => {
     <>
       <button
         onClick={handleOpenDropdown}
-        className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center gap-2"
+        className="text-white bg-secondary hover:bg-primary duration-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center gap-2"
         type="button"
       >
-        Dropdown button{" "}
+        {title}
         <IoIosArrowDropdownCircle
           style={{
             transform: isRotated ? "rotate(540deg)" : "rotate(0deg)",
@@ -44,17 +49,16 @@ const Dropdown: React.FC<DropdownProps> = ({ options, onOptionSelect }) => {
       </button>
 
       <div
-        id="dropdown"
-        className={`z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 ${
+        className={`z-10 mt-2 bg-secondary rounded-lg shadow w-44 ${
           isOpen ? `visible` : `hidden`
         }`}
       >
-        <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
+        <ul className="p-2 text-sm text-white">
           {options.map((option) => (
             <li key={option.value}>
               <button
                 onClick={() => handleOptionClick(option.value)}
-                className="block px-4 py-2 text-left w-full hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                className="block p-2 text-left w-full hover:bg-primary rounded-lg"
               >
                 {option.label}
               </button>

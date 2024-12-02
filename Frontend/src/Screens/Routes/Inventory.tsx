@@ -17,11 +17,9 @@ const Inventory = () => {
   return (
     <div className="p-12">
       <Dropdown
-        options={options}
         onOptionSelect={handleOptionSelect}
+        options={options}
         title={title}
-        width="12rem"
-        height="3rem"
       />
     </div>
   );
