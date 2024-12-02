@@ -25,11 +25,11 @@ const sections = [
 const App = () => {
   return (
     <div>
-      <Sidebar sections={sections} />
+      {/* <Sidebar sections={sections} /> */}
       <Routes>
         <Route path="Login" element={<Login />} />
         {sections.map((section) => (
-          <Route path={section.id} element={section.element} />
+          <Route path={section.id} key={section.id} element={section.element} />
         ))}
         <Route path="*" element={<NotFound />} />
       </Routes>
