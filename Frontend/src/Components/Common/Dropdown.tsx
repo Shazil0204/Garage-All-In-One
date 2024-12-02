@@ -9,27 +9,16 @@ interface DropdownOption {
 interface DropdownProps {
   options: DropdownOption[];
   onOptionSelect: (value: string) => void;
-  title?: string;
-  width?: string;
-  height?: string;
-  roundness?: string;
 }
 
-const Dropdown: React.FC<DropdownProps> = ({
-  options,
-  onOptionSelect,
-  title,
-  width,
-  height,
-  roundness,
-}) => {
+const Dropdown: React.FC<DropdownProps> = ({ options, onOptionSelect }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isRotated, setIsRotated] = useState(false);
 
   const handleOptionClick = (value: string) => {
     onOptionSelect(value);
     setIsOpen(false);
-    setIsRotated(!isRotated);
+    setIsRotated(false); // Reset rotation after selection
   };
 
   const handleOpenDropdown = () => {
@@ -41,11 +30,10 @@ const Dropdown: React.FC<DropdownProps> = ({
     <>
       <button
         onClick={handleOpenDropdown}
-        className={`flex items-center justify-between gap-2 text-white bg-teal-600 rounded-${
-          roundness || "lg"
-        } w-${width || "32"} h-${height || "10"} p-2`}
+        className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center gap-2"
+        type="button"
       >
-        {title || "Select Option"}
+        Dropdown button{" "}
         <IoIosArrowDropdownCircle
           style={{
             transform: isRotated ? "rotate(540deg)" : "rotate(0deg)",
@@ -54,24 +42,26 @@ const Dropdown: React.FC<DropdownProps> = ({
           }}
         />
       </button>
-      <ul
-        className={`absolute left-0 w-full mt-2 bg-secondary text-white rounded-lg shadow-lg z-10 transition-all duration-500 ease-in-out`}
-        style={{
-          minWidth: width || "8rem",
-          opacity: isOpen ? 1 : 0,
-          transform: isOpen ? "translateY(0)" : "translateY(-7px)", // Adds sliding effect
-        }}
+
+      <div
+        id="dropdown"
+        className={`z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 ${
+          isOpen ? `visible` : `hidden`
+        }`}
       >
-        {options.map((option) => (
-          <li
-            key={option.value}
-            className="px-4 py-2 hover:bg-teal-800 rounded-lg m-2 cursor-pointer"
-            onClick={() => handleOptionClick(option.value)}
-          >
-            {option.label}
-          </li>
-        ))}
-      </ul>
+        <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
+          {options.map((option) => (
+            <li key={option.value}>
+              <button
+                onClick={() => handleOptionClick(option.value)}
+                className="block px-4 py-2 text-left w-full hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              >
+                {option.label}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
     </>
   );
 };
