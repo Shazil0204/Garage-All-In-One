@@ -1,14 +1,17 @@
+import React from "react";
+import { IconType } from "react-icons";
+
 interface ButtonProps {
-  title?: string,
-  textColor?: string,
-  backgroundColor?: string,
-  image?: string,
-  buttonIcon?: IconProp,
-  roundness?: string,
-  width?: string,
-  height?: string,
-  children?: React.ReactNode,
-  onClickFunction: () => void
+  title?: string;
+  textColor?: string;
+  backgroundColor?: string;
+  image?: string;
+  buttonIcon?: IconType;
+  roundness?: string;
+  width?: string;
+  height?: string;
+  children?: React.ReactNode;
+  onClickFunction: () => void;
 }
 
 const CustomButton: React.FC<ButtonProps> = ({
@@ -36,11 +39,10 @@ const CustomButton: React.FC<ButtonProps> = ({
       }}
     >
       {image && <img src={image} alt="button-icon" className="w-16" />}
-      {/* {buttonIcon && <FontAwesomeIcon icon={buttonIcon} />} } */}
-      {title}
+      {buttonIcon && React.createElement(buttonIcon)} {title}
       {children}
     </button>
-  )
-}
+  );
+};
 
-export default CustomButton
+export default CustomButton;
