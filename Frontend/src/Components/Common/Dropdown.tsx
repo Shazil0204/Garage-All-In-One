@@ -38,7 +38,7 @@ const Dropdown: React.FC<DropdownProps> = ({
   };
 
   return (
-    <div className="relative">
+    <>
       <button
         onClick={handleOpenDropdown}
         className={`flex items-center justify-between gap-2 text-white bg-teal-600 rounded-${
@@ -55,11 +55,11 @@ const Dropdown: React.FC<DropdownProps> = ({
         />
       </button>
       <ul
-        className={`absolute left-0 mt-2 w-full bg-secondary text-white rounded-lg shadow-lg z-10 transition-all duration-500 ease-in-out`}
+        className={`absolute left-0 w-full mt-2 bg-secondary text-white rounded-lg shadow-lg z-10 transition-all duration-500 ease-in-out`}
         style={{
           minWidth: width || "8rem",
           opacity: isOpen ? 1 : 0,
-          transform: isOpen ? "translateY(0)" : "translateY(-10px)", // Adds sliding effect
+          transform: isOpen ? "translateY(0)" : "translateY(-7px)", // Adds sliding effect
         }}
       >
         {options.map((option) => (
@@ -72,7 +72,7 @@ const Dropdown: React.FC<DropdownProps> = ({
           </li>
         ))}
       </ul>
-    </div>
+    </>
   );
 };
 
