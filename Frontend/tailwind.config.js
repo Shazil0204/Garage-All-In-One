@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#00A0A0",
-        secondary: "#008080"
+        primary: "#008080",
+        secondary: "#00A0A0",
       },
-    }
+    },
   },
   plugins: [],
 };
