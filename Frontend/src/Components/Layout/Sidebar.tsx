@@ -19,10 +19,10 @@ const Sidebar: React.FC<SidebarProps> = ({ sections }) => {
             <NavLink
               to={section.id}
               className={`flex items-center px-4 py-2 z-50 bg-gray-200 rounded transition-colors duration-200
-                ${isExpanded ? "justify-start" : "justify-center"}
-                ${isExpanded ? "text-black" : "text-white group-hover:text-white"}`}
+                ${isExpanded ? "justify-start" : "justify-center"} `}
             >
               <span className="mr-4">{section.icon}</span>
+              { isExpanded ? '' : <span>{section.id} </span> }
             </NavLink>
           </li>
         ))}
