@@ -15,13 +15,11 @@ import NotFound from "./Screens/NotFound";
 
 // This way i will be able to use it in both route and sidebar
 const sections = [
-  { id: "Login", element: <Login /> },
   { id: "/", element: <Inventory /> },
   { id: "Car", element: <Car /> },
   { id: "Issue", element: <Issue /> },
   { id: "Invoice", element: <Invoice /> },
   { id: "Notes", element: <Note /> },
-  { id: "*", element: <NotFound /> },
 ];
 
 const App = () => {
@@ -29,9 +27,11 @@ const App = () => {
     <div>
       <Sidebar sections={sections} />
       <Routes>
+        <Route path="Login" element={<Login />} />
         {sections.map((section) => (
           <Route path={section.id} element={section.element} />
         ))}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
