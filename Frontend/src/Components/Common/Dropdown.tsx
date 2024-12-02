@@ -1,47 +1,77 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 
-const Dropdown = () => {
-  const [title, setTitle] = useState("Category");
-  const [dropDownOpen, setDropDownOpen] = useState(false);
+interface DropdownOption {
+  label: string;
+  value: string;
+}
+
+interface DropdownProps {
+  options: DropdownOption[];
+  onOptionSelect: (value: string) => void;
+  title?: string;
+  width?: string;
+  height?: string;
+  roundness?: string;
+}
+
+const Dropdown: React.FC<DropdownProps> = ({
+  options,
+  onOptionSelect,
+  title,
+  width,
+  height,
+  roundness,
+}) => {
+  const [isOpen, setIsOpen] = useState(false);
   const [isRotated, setIsRotated] = useState(false);
 
-  const ChangeDropDownValue = () => {
-    setDropDownOpen(!dropDownOpen);
-    setIsRotated(!isRotated); // Toggle rotation on button click
+  const handleOptionClick = (value: string) => {
+    onOptionSelect(value);
+    setIsOpen(false);
+    setIsRotated(!isRotated);
+  };
+
+  const handleOpenDropdown = () => {
+    setIsOpen(!isOpen);
+    setIsRotated(!isRotated);
   };
 
   return (
-    <div className="relative max-w-min bg-primary text-white ~sm/lg~text-xs/md uppercase font-bold rounded-t-lg">
-      <button onClick={ChangeDropDownValue} className="flex gap-2 p-2">
-        {title}
+    <div className="relative">
+      <button
+        onClick={handleOpenDropdown}
+        className={`flex items-center justify-between gap-2 text-white bg-teal-600 rounded-${
+          roundness || "lg"
+        } w-${width || "32"} h-${height || "10"} p-2`}
+      >
+        {title || "Select Option"}
         <IoIosArrowDropdownCircle
-          id="icon"
-          className="text-xl mt-1 duration-1000"
-          style={{ transform: isRotated ? "rotate(540deg)" : "rotate(0deg)" }} // Apply rotation dynamically
+          style={{
+            transform: isRotated ? "rotate(540deg)" : "rotate(0deg)",
+            transition: "transform 0.3s ease",
+            marginTop: 0,
+          }}
         />
       </button>
-      {/* {dropDownOpen && (
-        <div className="absolute bg-primary p-2 min-w-full border-t-2 border-black duration-300 hover:bg-secondary rounded-b-lg"></div>
-      )} */}
-      <div
-        className={`absolute bg-primary p-2 min-w-full border-t-2 border-black hover:bg-secondary rounded-b-lg transition-all duration-500 ease-in-out ${
-          dropDownOpen ? "opacity-100 max-h-40" : "opacity-0 max-h-0"
-        }`}
-        style={{ overflow: "hidden" }}
+      <ul
+        className={`absolute left-0 mt-2 w-full bg-secondary text-white rounded-lg shadow-lg z-10 transition-all duration-500 ease-in-out`}
+        style={{
+          minWidth: width || "8rem",
+          opacity: isOpen ? 1 : 0,
+          transform: isOpen ? "translateY(0)" : "translateY(-10px)", // Adds sliding effect
+        }}
       >
-        {/* Dropdown content */}
-        <p>Option 1</p>
-        <p>Option 2</p>
-        <p>Option 3</p>
-        <p>Option 3</p>
-        <p>Option 3</p>
-        <p>Option 3</p>
-        <p>Option 3</p>
-        <p>Option 3</p>
-        <p>Option 3</p>
-        <p>Option 3</p>
-      </div>
+        {options.map((option) => (
+          <li
+            key={option.value}
+            className="px-4 py-2 hover:bg-teal-800 rounded-lg m-2 cursor-pointer"
+            onClick={() => handleOptionClick(option.value)}
+          >
+            {option.label}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
