@@ -1,9 +1,14 @@
 import Dropdown from "../../Components/Common/Dropdown";
 import { useState } from "react";
+import Search from "../../Components/Common/Search";
 const Inventory = () => {
   const handleOptionSelect = (value: string) => {
     console.log("Selected option:", value);
     setTitle(value);
+  };
+
+  const handleSearch = (query: string) => {
+    console.log("Search query:", query); // Replace this with your logic
   };
 
   const [title, setTitle] = useState("Choose an option");
@@ -15,7 +20,8 @@ const Inventory = () => {
   ];
 
   return (
-    <div className="p-12">
+    <div className="min-w-full flex justify-center p-2 gap-2">
+      <Search onSearch={handleSearch} />
       <Dropdown
         onOptionSelect={handleOptionSelect}
         options={options}
