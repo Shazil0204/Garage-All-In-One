@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import NavLink from "./NavLink"; // Your NavLink component
 
 interface SidebarProps {

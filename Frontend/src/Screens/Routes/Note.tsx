@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 interface Note {
   text: string;
@@ -32,11 +32,6 @@ const Note = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
-      {/* Header */}
-      <h1 className="text-4xl font-bold text-gray-800 mb-6 text-center">
-        Notes App
-      </h1>
-
       {/* Note Input Section */}
       <div className="max-w-lg mx-auto bg-white shadow-lg rounded-lg p-4 mb-6">
         <textarea

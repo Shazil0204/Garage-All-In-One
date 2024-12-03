@@ -8,7 +8,7 @@ import { BsFillWrenchAdjustableCircleFill } from "react-icons/bs";
 import { FaFileInvoiceDollar } from "react-icons/fa";
 import { FaNoteSticky } from "react-icons/fa6";
 // Layout
-import Sidebar from "./Components/Layout/Sidebar";
+import Sidebar from "./Components/Layout/Navbar";
 
 // Screens
 import Inventory from "./Screens/Routes/Inventory";
@@ -19,6 +19,7 @@ import Car from "./Screens/Routes/Car";
 import Login from "./Screens/Login";
 import NotFound from "./Screens/NotFound";
 import Profile from "./Screens/Routes/Profile";
+import { useLocation } from "react-router-dom";
 
 // This way i will be able to use it in both route and sidebar
 const sections = [
@@ -45,9 +46,15 @@ const sections = [
 ];
 
 const App = () => {
+  const location = useLocation();
   return (
     <div>
-      <Sidebar sections={sections} />
+      {
+        location.pathname !== "/login" && (
+
+          <Sidebar sections={sections} />
+        )
+      }
       <Routes>
         <Route path="Login" element={<Login />} />
         {sections.map((section) => (
