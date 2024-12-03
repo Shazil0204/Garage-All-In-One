@@ -32,24 +32,25 @@ const Dropdown: React.FC<DropdownProps> = ({
   };
 
   return (
-    <>
+    <div>
       <button
         onClick={handleOpenDropdown}
         className="text-white bg-secondary hover:bg-primary duration-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center gap-2"
         type="button"
       >
-        {title}
+        <div className="hidden lg:block">{title}</div>
         <IoIosArrowDropdownCircle
           style={{
             transform: isRotated ? "rotate(540deg)" : "rotate(0deg)",
             transition: "transform 0.3s ease",
             marginTop: 0,
+            fontSize: 20,
           }}
         />
       </button>
 
       <div
-        className={`z-10 mt-2 bg-secondary rounded-lg shadow w-44 ${
+        className={`absolute md:right-auto right-2 z-10 mt-2 bg-secondary rounded-lg shadow w-44 ${
           isOpen ? `visible` : `hidden`
         }`}
       >
@@ -66,7 +67,7 @@ const Dropdown: React.FC<DropdownProps> = ({
           ))}
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 
