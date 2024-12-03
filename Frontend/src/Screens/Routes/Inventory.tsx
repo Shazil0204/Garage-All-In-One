@@ -82,7 +82,7 @@ const Inventory = () => {
           title={title}
         />
       </div>
-      <div className="min-w-full p-2 grid justify-center  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+      <div className="min-w-full p-2 grid justify-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
         {cardsInfo.map((info) => (
           <Card
             image={info.image}
