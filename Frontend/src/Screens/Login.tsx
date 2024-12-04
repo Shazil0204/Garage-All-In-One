@@ -1,12 +1,13 @@
 import { useState } from "react";
-import LoginForm from "../Components/Auth/LoginForm";
-import ForgotPasswordForm from "../Components/Auth/ForgotPasswordForm";
 import { useNavigate } from "react-router-dom";
+import LoginForm from "../Components/Auth/LoginForm";
+import ConfirmCodeForm from "../Components/Auth/ConfirmCode";
+import ForgotPasswordForm from "../Components/Auth/ForgotPasswordForm";
 import ResetPasswordForm from "../Components/Auth/ResetPasswordForm";
 
 const Login = () => {
   const [currentView, setCurrentView] = useState<
-    "login" | "forgotPassword" | "resetPassword"
+    "login" | "forgotPassword" | "confirmCode" | "resetPassword"
   >("login");
   const navigate = useNavigate();
 
@@ -14,13 +15,13 @@ const Login = () => {
     navigate("/");
   };
 
-  const changeView = (view: "login" | "forgotPassword" | "resetPassword") => {
+  const changeView = (view: "login" | "forgotPassword" | "confirmCode" | "resetPassword") => {
     setCurrentView(view);
   };
 
   return (
     <div className="bg-gradient-to-br from-[#18ffff] to-[#187272] h-screen w-full flex justify-center items-center">
-      <div className="p-5 bg-white shadow-[0_0px_60px_0px_rgba(0,0,0,0.4)] lg:flex">
+      <div className="p-5 bg-white shadow-[0_0px_60px_0px_rgba(0,0,0,0.4)] lg:flex rounded-lg">
         {currentView === "login" && (
           <LoginForm
             onLogin={handleUserLogged}
@@ -29,6 +30,12 @@ const Login = () => {
         )}
         {currentView === "forgotPassword" && (
           <ForgotPasswordForm
+            handleBackToDefault={() => changeView("login")}
+            handleResetPassword={() => changeView("confirmCode")}
+          />
+        )}
+        {currentView === "confirmCode" && (
+          <ConfirmCodeForm
             handleBackToDefault={() => changeView("login")}
             handleResetPassword={() => changeView("resetPassword")}
           />
