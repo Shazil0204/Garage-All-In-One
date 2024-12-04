@@ -1,12 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaUser, FaLock } from "react-icons/fa";
+import { loginUser } from "../../Services/API/auth/loginService";
 
 interface LoginFormProps {
   onForgotPassword: () => void;
-  onLogin: () => void;
 }
 
-const LoginForm: React.FC<LoginFormProps> = ({ onForgotPassword, onLogin }) => {
+const LoginForm: React.FC<LoginFormProps> = ({ onForgotPassword }) => {
+  const [username, setUsername] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+
+  const handleLogin = async () => {
+    try {
+      // Directly call the login API service with the username and password
+      const response = await loginUser(username, password);
+
+      if (response.success) {
+        // Redirect to home/dashboard after successful login
+        alert("Login successful!");
+      } else {
+        // Show error message
+        alert("Login failed! Please check your credentials.");
+      }
+    } catch (error) {
+      console.error("Login error:", error);
+      alert("An error occurred while logging in. Please try again.");
+    }
+  };
+
   return (
     <div className="flex flex-col justify-center">
       {/* Username Field */}
@@ -26,10 +47,13 @@ const LoginForm: React.FC<LoginFormProps> = ({ onForgotPassword, onLogin }) => {
             id="username"
             type="text"
             placeholder="Enter your username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
             className="w-full px-4 py-2 text-gray-700 focus:outline-none"
           />
         </div>
       </div>
+
       {/* Password Field */}
       <div className="mb-1">
         <label
@@ -47,10 +71,13 @@ const LoginForm: React.FC<LoginFormProps> = ({ onForgotPassword, onLogin }) => {
             id="password"
             type="password"
             placeholder="Enter your password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             className="w-full px-4 py-2 text-gray-700 focus:outline-none"
           />
         </div>
       </div>
+
       {/* Forget Password button */}
       <div className="mb-4">
         <button
@@ -64,7 +91,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onForgotPassword, onLogin }) => {
       {/* Submit Button */}
       <div className="mb-4">
         <button
-          onClick={onLogin}
+          onClick={handleLogin} // Directly triggers the login service
           className="w-full py-2 px-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-500 transition duration-200"
         >
           Login
