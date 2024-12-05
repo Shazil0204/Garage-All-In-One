@@ -12,7 +12,7 @@ const DynamicTable: React.FC<TableProps> = ({
   renderActions,
 }) => {
   return (
-    <div className="overflow-x-auto md:font-bold md:text-xl">
+    <div className="overflow-x-auto ">
       <table className="w-full table-fixed border-collapse border border-gray-300">
         <thead className="bg-primary text-white">
           <tr>
@@ -23,19 +23,21 @@ const DynamicTable: React.FC<TableProps> = ({
                   header.toLowerCase() === "id"
                     ? "lg:table-cell hidden w-1/12"
                     : ""
-                }`}
+                } ${header.toLowerCase() === "date" ? "w-1/5" : ""}`}
               >
                 {header}
               </th>
             ))}
-            <th className="border border-gray-300 p-4 text-left">Actions</th>
+            <th className="border border-gray-300 p-4 text-left w-2/6 lg:w-1/5">
+              Actions
+            </th>
           </tr>
         </thead>
         <tbody>
           {data.map((row, rowIndex) => (
             <tr
               key={rowIndex}
-              className="border-2 even:text-primary even:bg-gray-100 overflow-x-auto"
+              className="border-2 even:text-primary even:bg-gray-100 overflow-x-auto ~text-xs/2xl"
             >
               {headers.map((header, colIndex) => (
                 <td
