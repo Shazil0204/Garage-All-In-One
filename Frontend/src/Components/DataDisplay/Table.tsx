@@ -28,7 +28,7 @@ const DynamicTable: React.FC<TableProps> = ({
                 {header}
               </th>
             ))}
-            <th className="border border-gray-300 p-4 text-left w-2/6 lg:w-1/5">
+            <th className="border border-gray-300 p-4 text-left sm:w-2/6 lg:w-1/5">
               Actions
             </th>
           </tr>

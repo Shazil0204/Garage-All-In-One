@@ -39,7 +39,7 @@ const Invoice = () => {
 
   const renderActions = (row: Record<string, any>) => (
     <>
-      <div className="flex justify-evenly gap-2 w-full overflow-hidden">
+      <div className="flex justify-evenly gap-2 w-full overflow-auto">
         <button
           className="bg-orange-400 hover:bg-orange-500 duration-100 text-white p-2 rounded-full flex justify-evenly items-center gap-2 w-full"
           onClick={() => alert(`Editing ${row.Name}`)}
