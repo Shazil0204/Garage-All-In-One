@@ -18,6 +18,7 @@ CREATE TABLE Items (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     image_path VARCHAR(255) NOT NULL,
+    category VARCHAR(255) NOT NULL,
     quantity INT NOT NULL,
     price DECIMAL(8,2) NOT NULL,
     min_quantity INT NOT NULL,
