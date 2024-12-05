@@ -5,7 +5,6 @@ import Search from "../../Components/Common/Search";
 import { useState } from "react";
 
 import { MdModeEditOutline } from "react-icons/md";
-import { FaDownload } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 
 const Car = () => {
@@ -41,24 +40,17 @@ const Car = () => {
     <>
       <div className="flex justify-evenly gap-2 w-full overflow-hidden">
         <button
-          className="bg-orange-400 hover:bg-orange-500 duration-100 text-white p-2 rounded-full xl:rounded flex justify-evenly items-center gap-2 w-full"
+          className="bg-orange-400 hover:bg-orange-500 duration-100 text-white p-2 rounded-full flex justify-evenly items-center gap-2 w-full"
           onClick={() => alert(`Editing ${row.Name}`)}
         >
-          <span className="hidden xl:block">Edit</span>
+          <span className="hidden 2xl:block">Edit</span>
           <MdModeEditOutline className="md:mt-1" />
         </button>
         <button
-          className="bg-secondary hover:bg-primary duration-100 text-white p-2 rounded-full xl:rounded flex justify-evenly items-center gap-2 w-full"
-          onClick={() => alert(`Viewing ${row.Name}`)}
+          className="bg-red-600 hover:bg-red-700 duration-100 text-white p-2 rounded-full flex justify-evenly items-center gap-2 w-full"
+          onClick={() => alert(`Delete ${row.Name}`)}
         >
-          <span className="hidden xl:block">Download</span>
-          <FaDownload className="md:mt-1" />
-        </button>
-        <button
-          className="bg-red-600 hover:bg-red-700 duration-100 text-white p-2 rounded-full xl:rounded flex justify-evenly items-center gap-2 w-full"
-          onClick={() => alert(`Viewing ${row.Name}`)}
-        >
-          <span className="hidden xl:block">Delete</span>
+          <span className="hidden 2xl:block">Delete</span>
           <MdDelete className="md:mt-1" />
         </button>
       </div>
