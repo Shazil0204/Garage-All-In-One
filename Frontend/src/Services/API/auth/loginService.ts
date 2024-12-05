@@ -4,7 +4,7 @@ const BASE_URL = "http://localhost:5000"; // Replace with your backend URL
 
 export const loginUser = async (username: string, password: string) => {
   try {
-    const response = await axios.post(`${BASE_URL}/api/login`, {
+    const response = await axios.post(`${BASE_URL}/api/auth/login`, {
       username,
       password,
     });

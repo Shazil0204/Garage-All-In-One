@@ -15,16 +15,17 @@ const LoginForm: React.FC<LoginFormProps> = ({ onForgotPassword }) => {
       // Directly call the login API service with the username and password
       const response = await loginUser(username, password);
 
-      if (response.success) {
+      if (response.token) {
         // Redirect to home/dashboard after successful login
-        alert("Login successful!");
+        localStorage.setItem("token", response.token);
+        window.alert("Login successful!");
       } else {
         // Show error message
-        alert("Login failed! Please check your credentials.");
+        window.alert("Login failed! Please check your credentials.");
       }
     } catch (error) {
       console.error("Login error:", error);
-      alert("An error occurred while logging in. Please try again.");
+      window.alert("An error occurred while logging in. Please try again.");
     }
   };
 

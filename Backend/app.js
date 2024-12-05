@@ -2,9 +2,15 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const authRoutes = require('./src/routes/authRoutes');
 const sequelize = require('./src/config/database');
+const cors = require("cors");
 require('dotenv').config();
 
 const app = express();
+
+app.use(cors({
+  origin: "http://localhost:5173",
+  methods: ["GET", "POST"],
+}))
 
 // Middleware
 app.use(bodyParser.json());
