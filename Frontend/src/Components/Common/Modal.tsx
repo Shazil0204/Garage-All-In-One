@@ -1,15 +1,24 @@
-interface ModalProp {
+import React from "react";
+import { FaTimes } from "react-icons/fa"; // React icon for close button
+
+interface ModalProps {
+  onClose: () => void;
   children: React.ReactNode;
-  onClickOutside: () => void;
 }
 
-const Modal: React.FC<ModalProp> = ({ children, onClickOutside }) => {
+const Modal: React.FC<ModalProps> = ({ onClose, children }) => {
   return (
-    <div
-      onClick={onClickOutside}
-      className="w-full min-h-full bg-black/50 flex justify-center items-center fixed top-0 left-0 z-50 "
-    >
-      <div className="bg-white p-6 rounded-lg shadow-2xl max-w-md w-full border-2 border-black">
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+      <div className="w-full max-w-md p-4 bg-white rounded-lg shadow-lg relative">
+        {/* Close Button */}
+        <button
+          onClick={onClose}
+          className="absolute top-2 right-2 text-xl text-gray-600 hover:text-gray-800"
+        >
+          <FaTimes />
+        </button>
+
+        {/* Modal Content (Dynamic) */}
         {children}
       </div>
     </div>
@@ -17,3 +26,4 @@ const Modal: React.FC<ModalProp> = ({ children, onClickOutside }) => {
 };
 
 export default Modal;
+  
