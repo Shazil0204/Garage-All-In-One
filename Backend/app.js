@@ -15,8 +15,9 @@ const app = express();
 // Middleware
 app.use(cors({
   origin: "http://localhost:5173",
-  methods: ["GET", "POST"],
-}))
+  methods: ['GET','POST','OPTIONS'],
+  credentials: true,
+}));
 
 app.use(bodyParser.json());
 
@@ -24,11 +25,9 @@ sequelize.sync({ force: false }) // force: false preserves existing tables
   .then(() => console.log('Database synced successfully'))
   .catch((err) => console.error('Error syncing database:', err));
 
-console.log(registerController);
 // Auth Endpoints
 app.post('/api/auth/register', registerController);
 app.post('/api/auth/login', loginController);
 
 // Start server
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(5000, () => console.log(`Server running on port 5000`));

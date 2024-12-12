@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaUser, FaLock } from "react-icons/fa";
 import { loginUser } from "../../Services/API/auth/loginService";
-
+import { useNavigate } from "react-router-dom";
 interface LoginFormProps {
   onForgotPassword: () => void;
 }
@@ -9,16 +9,15 @@ interface LoginFormProps {
 const LoginForm: React.FC<LoginFormProps> = ({ onForgotPassword }) => {
   const [username, setUsername] = useState<string>("");
   const [password, setPassword] = useState<string>("");
+  const navigate = useNavigate();
 
   const handleLogin = async () => {
     try {
       // Directly call the login API service with the username and password
-      const response = await loginUser(username, password);
+      const res = await loginUser(username, password);
 
-      if (response.token) {
-        // Redirect to home/dashboard after successful login
-        localStorage.setItem("token", response.token);
-        window.alert("Login successful!");
+      if (res.status === 200) {
+        navigate('/'); 
       } else {
         // Show error message
         window.alert("Login failed! Please check your credentials.");
